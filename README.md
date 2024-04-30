@@ -1,5 +1,8 @@
 # EpiMax Backend Assignment
 
+for documentantion
+http://localhost:3000/api-docs/#/
+
 The columns of the tables are given below,
 
 **Users Table**
@@ -82,3 +85,6 @@ Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFkb
 
 DELETE http://localhost:3000/tasks/2/
 Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFkbWluIiwiaWF0IjoxNzE0NDc3MzUyfQ.lGEYJlbIzmnldJv9nGXC_xe8XxCOs4msKeJcqBY9yLM
+
+
+
