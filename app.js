@@ -6,11 +6,12 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const swaggerJsDoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
+const cors = require("cors");
 
 const databasePath = path.join(__dirname, "Epimax.db");
 
 const app = express();
-
+app.use(cors());
 app.use(express.json());
 
 const swaggerOptions = {
