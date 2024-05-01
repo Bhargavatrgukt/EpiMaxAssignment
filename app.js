@@ -233,6 +233,8 @@ app.post("/login/", async (request, response) => {
  *     responses:
  *       '200':
  *         description: Task created successfully
+ *       '401':
+ *         description: Unauthorized - JWT token is missing or invalid
  *       '500':
  *         description: Internal server error
  */
