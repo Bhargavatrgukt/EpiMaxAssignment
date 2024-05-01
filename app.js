@@ -80,6 +80,12 @@ function authenticateToken(request, response, next) {
   }
 }
 
+// Define a route handler for the root URL ("/")
+app.get("/", (request, response) => {
+  response.send("Welcome to Epimax Node JS Assignment");
+});
+
+
 //Creating a User if he/she doesn't exists
 
 /**
