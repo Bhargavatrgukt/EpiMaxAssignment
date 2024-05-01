@@ -11,7 +11,9 @@ const cors = require("cors");
 const databasePath = path.join(__dirname, "Epimax.db");
 
 const app = express();
+
 app.use(cors());
+
 app.use(express.json());
 
 const swaggerOptions = {
@@ -27,6 +29,16 @@ const swaggerOptions = {
         url: "http://localhost:3000/", // Base URL for the server
       },
     ],
+    components: {
+      // Define security scheme
+      securitySchemes: {
+        bearerAuth: {
+          type: "http",
+          scheme: "bearer",
+          bearerFormat: "JWT",
+        },
+      },
+    },
   },
   apis: ["./app.js"], // Paths to the API files
 };
@@ -85,7 +97,6 @@ function authenticateToken(request, response, next) {
 app.get("/", (request, response) => {
   response.send("Welcome to Epimax Node JS Assignment");
 });
-
 
 //Creating a User if he/she doesn't exists
 
