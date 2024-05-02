@@ -12,7 +12,9 @@ const databasePath = path.join(__dirname, "Epimax.db");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://your-swagger-docs-domain.com'
+}));
 
 app.use(express.json());
 
