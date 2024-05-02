@@ -13,7 +13,7 @@ const databasePath = path.join(__dirname, "Epimax.db");
 const app = express();
 
 app.use(cors({
-  origin: 'https://epimaxassignment-3.onrender.com/api-docs/#/'
+  origin: 'https://epimaxassignment-3.onrender.com'
 }));
 
 app.use(express.json());
