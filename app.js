@@ -28,7 +28,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: "http://localhost:3000/", // Base URL for the server
+        url: "https://epimaxassignment-3.onrender.com/", // Base URL for the server
       },
     ],
     components: {
